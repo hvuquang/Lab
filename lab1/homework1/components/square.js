@@ -6,9 +6,9 @@ class Square extends HTMLElement {
         this.innerHTML = `
         <style>
             .square {
-                height: 12px;
-                width: 12px;
-                border: 1px solid black;
+                height: 15px;
+                width: 15px;
+                border: 2px solid #6D9886;
             }
         </style>
         <body>
