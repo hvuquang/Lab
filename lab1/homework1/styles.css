@@ -146,3 +146,14 @@ a:hover{
     justify-content: space-around;
     width: 25%;
 }
+
+#profile-p {
+    color: grey;
+}
+
+.sub-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}

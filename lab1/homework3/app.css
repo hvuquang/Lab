@@ -3,7 +3,9 @@ div {
 }
 
 body {
-	background-color: #fff;
+	background-color: rgb(234, 229, 229);
+	margin: 0;
+	padding: 0;
 }
 
 #menu {
@@ -122,4 +124,58 @@ span:hover {
 .notice_body {
     color:#009dcb;
     margin-right: 1em;
+}
+
+.main {
+	padding: 32px 60px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.content {
+	width: 850px;
+	background-color: #fff;
+	padding: 10px 20px;
+	border: 1.5px solid lightgray;
+}
+
+.viec-lam {
+	background-color: #fff;
+	padding: 10px 20px;
+	border: 1.5px solid lightgray;
+}
+
+.footer {
+	display: flex;
+	color: #fff;
+	background-color: #000;
+	justify-content: space-between;
+	padding: 15px;
+}
+
+.footer-link {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.footer-link > div {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-link a {
+	padding: 5px;
+}
+
+.footer-r > div{
+	display: flex;
+	flex-direction: column;
+}
+a {
+	color: lightgray;
+}
+
+a:hover {
+	color:#fff;
 }
