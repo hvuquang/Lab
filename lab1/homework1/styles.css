@@ -133,7 +133,16 @@ a:hover{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    
+    padding: 5px;
+}
+
+.skills-detail:hover {
+    background-color: #D9CAB3;
+}
+
+.skills-detail:hover .square-box {
+    justify-content: space-between;
+    width: 28%;
 }
 
 .detail-p {

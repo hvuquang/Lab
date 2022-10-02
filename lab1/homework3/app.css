@@ -3,7 +3,7 @@ div {
 }
 
 body {
-	background-color: rgb(234, 229, 229);
+	background-color: #f4f4f4;
 	margin: 0;
 	padding: 0;
 }
@@ -136,14 +136,47 @@ span:hover {
 .content {
 	width: 850px;
 	background-color: #fff;
-	padding: 10px 20px;
+	padding: 10px 20px 20px 12px;
 	border: 1.5px solid lightgray;
+	height: auto;
+	line-height: 1.5rem;
 }
 
 .viec-lam {
 	background-color: #fff;
 	padding: 10px 20px;
 	border: 1.5px solid lightgray;
+	height: fit-content;
+	width: 28%;
+	box-sizing: border-box;
+}
+
+.job-detail {
+	border: 1px solid lightgrey;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	background-color: #f2fbf6;
+	border-radius: 5px;
+	margin: 10px;
+}
+
+.job-information {
+	width: 60%;
+}
+
+.job-detail:hover {
+	box-shadow: 0px 5px 10px 0 lightgrey;
+	transition: box-shadow 0.5s ease 0s;
+	cursor: pointer;
+}
+
+.job-img {
+	width: 30%;
+	align-items: center;
+	display: flex;
+	padding: 10px;
+	margin-right: 2rem;
 }
 
 .footer {
@@ -174,8 +207,9 @@ span:hover {
 }
 a {
 	color: lightgray;
+	text-decoration: none;
 }
 
 a:hover {
-	color:#fff;
+	color:#f2fbf6;
 }
