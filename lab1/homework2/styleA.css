@@ -28,35 +28,6 @@
     border: 4px solid black;
     margin: 10px;
 }
-.styleB{
-    display: flex;
-    flex-direction: row;
-    height: 250px;
-}
-.square-container4 {
-    width: 100px;
-    height: 150px;
-    background: #eeeff2;
-    border-left: 10px dotted #D0D0FF;
-    margin: 10px;
-}
-.square-container4:hover{
-    background: yellow;
-}
-.square-right{
-    display: flex;
-    align-items: flex-end;
-}
-.square-container5{
-    width: 100px;
-    height: 150px;
-    background: #eeeff2;
-    border-left: 10px dotted #D0D0FF;
-    margin: 10px;
-}
-.square-container5:hover {
-    background: yellow;
-}
 
 .styleC{
     height: 400px;
