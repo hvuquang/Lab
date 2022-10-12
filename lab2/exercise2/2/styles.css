@@ -1,0 +1,168 @@
+#profile {
+    margin: 0.5em;
+}
+#profile_header {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+#header_body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 3;
+}
+
+#header_body > div {
+    flex:1;
+}
+
+body {
+    background-color: #F6F6F6;
+    color: #212121;
+    width: 8.27in;
+    margin-left: 25%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1,h2,h3 {
+    color: #6D9886;
+}
+
+#cat_pic{
+    display: flex;
+    justify-content: flex-start;
+}
+
+a:hover{
+    color: #6D9886;
+}
+
+.experiences {
+    background-color: #D9CAB3;
+    padding: 10px 30px 5px 15px ;
+}
+
+.experiences div{
+    display: flex;
+    flex-direction: column;
+}
+
+.experiences .experiences_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.experiences h3 {
+    color: #6D9886;
+}
+
+.experiences_body > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.experiences_body > div > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.experiences_bodyr {
+    margin-left: 100px;
+    flex:2;
+}
+
+.experiences_bodyl {
+    min-width: 200px;
+    flex:1;
+}
+
+.skills-details {
+    display: flex;
+    flex-direction: row;
+}
+
+.skills-details-l {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.skills-details-r {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.skills-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.languages-detail {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.profile-github {
+    font-style: italic;
+    color: grey;
+}
+
+.btn-primary {
+    background-color: #6D9886;
+    border: #6D9886;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    background-color:#6D9886;
+}
+
+.skills-detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.skills-detail:hover {
+    background-color: #D9CAB3;
+}
+
+.skills-detail:hover .square-box {
+    justify-content: space-between;
+    width: 28%;
+}
+
+.detail-p {
+    margin-top: 1rem;
+}
+
+.square-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 25%;
+}
+
+#profile-p {
+    color: grey;
+}
+
+.sub-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
