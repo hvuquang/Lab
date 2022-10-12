@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function testResults(form) {
+            let birth = form.input.value;
+            const currentYear = new Date().getFullYear();
+            let result = currentYear - birth;
+            alert("Your age: " + result);
+        }
+    </script>
+</head>
+<body>
+    <form NAME="my-form" ACTION="" METHOD="GET">Your birth year: <br>
+        <input TYPE="text" NAME="input">
+        <P>
+        <input TYPE="button" NAME="button" Value="Calculate" onClick="testResults(this.form)">
+    </from>
+</body>
+</html>
