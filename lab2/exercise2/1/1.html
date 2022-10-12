@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM Button Object</title>
+
+    <script>
+      function clickEvent() {
+        var doc = document.getElementById("btn");
+        doc.textContent = "You have clicked me! I changed";
+      }
+    </script>
+  </head>
+
+  <body style="text-align: center">
+    <button type="button" id="btn" onclick="clickEvent()">Click Me !!!</button>
+  </body>
+</html>
