@@ -115,7 +115,18 @@ root.render(
     {/* exercise 4.2 */}
     
     {/* exercise 4.6 */}
-
+    <div
+      style={{
+        textAlign: "center",
+        fontSize: 15,
+        color: "#d0f0c0",
+        background: "gray",
+        border: "1px solid #d0f0c0",
+        margin: 20,
+      }}
+    >
+      Green is the prime color of the world
+    </div>
     {/* exercise 3 */}
     <MyInput></MyInput>
   </React.StrictMode>
