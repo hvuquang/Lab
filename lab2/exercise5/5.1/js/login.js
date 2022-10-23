@@ -10,14 +10,28 @@ var username = document.getElementById("user-name");
 // không dùng đc arrow function in DOM ???
 
 let checkValid = (username, password) => {
-    const re = new RegExp(@"^([a-zA-Z0-9_\-])([a-zA-Z0-9_\-\.]*)@(\[((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\.){3}|((([a-zA-Z0-9\-]+)\.)+))([a-zA-Z]{2,}|(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\])$");
-}
+  var pass = /^[A-Za-z]\w$/
+  if (password.match(pass)) {
+    console.log(password);
+    alert("true");
+    return true;
+  } else {
+    console.log(password);
+    alert("false");
+    return false;
+  }
+};
 
 function loginClick() {
-  if (user.value != "" && password.value != "" ) {
-    login.style.display = "none";
-    hello.style.display = "block";
-    username.innerHTML = user.value;
+  if (user.value != "" && password.value != "") {
+    if (checkValid(user.value, password.value) == true) {
+      alert("1");
+      login.style.display = "none";
+      hello.style.display = "block";
+      username.innerHTML = user.value;
+    } else {
+      alert("Invalid Username, Password");
+    }
   } else {
     alert("Invalid Username, Password");
   }
