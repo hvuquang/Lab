@@ -10,22 +10,21 @@ var username = document.getElementById("user-name");
 // không dùng đc arrow function in DOM ???
 
 let checkValid = (username, password) => {
-  var pass = /^[A-Za-z]\w$/
-  if (password.match(pass)) {
-    console.log(password);
-    alert("true");
-    return true;
-  } else {
-    console.log(password);
-    alert("false");
-    return false;
+  var passw = /[A-Za-z]\w/;
+  var user = /[A-Za-z]\w/;
+  if(username.match(user)&& username.search(/[\!\@\#\$\%\^\&\*\(\)\_\+\.\,\;\:\-\ ]/) < 0) {
+    if (password.match(passw) && password.search(/[\!\@\#\$\%\^\&\*\(\)\_\+\.\,\;\:\-\ ]/) < 0) {
+      return true;
+    } else {
+      return false;
+    }
   }
+    else return false;
 };
 
 function loginClick() {
   if (user.value != "" && password.value != "") {
     if (checkValid(user.value, password.value) == true) {
-      alert("1");
       login.style.display = "none";
       hello.style.display = "block";
       username.innerHTML = user.value;
