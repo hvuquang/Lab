@@ -1,0 +1,8 @@
+.key {
+    height: calc(var(--width) * 4);
+    width: calc(var(--width));
+    color: #D80662;
+    display: flex;
+    justify-content: center;
+    padding-top: 8rem;
+}

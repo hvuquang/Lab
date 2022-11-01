@@ -1,0 +1,11 @@
+
+  
+.keywhite {
+    --width: 100px;
+    background-color: white;
+    border: 1px solid #333;
+}
+  
+.keywhite:active {
+    background-color: #CCC;
+}
