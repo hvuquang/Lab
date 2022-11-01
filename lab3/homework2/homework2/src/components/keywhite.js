@@ -6,7 +6,6 @@ class KeyWhite extends React.Component {
   render() {
     return (
       <div className="key keywhite">{this.props.name}</div>
-      
     );
   }
 }

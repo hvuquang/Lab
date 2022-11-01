@@ -2,6 +2,8 @@ import React from "react";
 import KeyWhite from "./keywhite";
 import KeyBlack from "./keyblack";
 import "./octave.css";
+import C_sound from "../notes/C.mp3";
+import Db_sound from "../notes/Db.mp3";
 
 class Octave extends React.Component {
   render() {
@@ -21,6 +23,11 @@ class Octave extends React.Component {
           <KeyBlack name="b"></KeyBlack>
           <KeyWhite name="7"></KeyWhite>
         </div>
+        <audio src={C_sound} id="C" type="audio/mp3"></audio>
+        <audio src="../notes/C.mp3" id="C" type="audio/mp3"></audio>
+        <audio id="Db">
+          <source src={Db_sound} type="audio/mp3" />
+        </audio>
       </div>
     );
   }
