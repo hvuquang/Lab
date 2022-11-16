@@ -2,7 +2,7 @@ import "typeface-roboto";
 import React, { useState } from "react";
 import Drawer from "@mui/material/Drawer";
 import { Button, List, ListItem, ListItemText } from "@mui/material";
-import {BrowserRouter as Router, Route,  Routes, Link} from "react-router-dom";
+import {BrowserRouter as Router, Route, Switch, Link} from "react-router-dom";
 import First from './First';
 import Second from './Second';
 import Third from './Third';
@@ -20,11 +20,11 @@ function App({ links }) {
   return (
     <Router>
       <Button onClick={toggleDrawer}>Open Nav</Button>
-      <Routes>
+      <section>
         <Route path="/first" element={<First />} />
         <Route path="/second" element={<Second />} />
         <Route path="/third" element={<Third />} />
-      </Routes>
+      </section>
       <Drawer open={open} onClose={toggleDrawer}>
         <div
           style={{ width: 250 }}
@@ -35,7 +35,7 @@ function App({ links }) {
           <List>
             {links.map((link) => (
               <ListItem button key={link.url} component={Link} to={link.url}>
-                <Routes>
+                <Switch>
                   <Route
                     exact
                     path={link.url}
@@ -50,7 +50,7 @@ function App({ links }) {
                     path="/"
                     render={() => <ListItemText primary={link.name} />}
                   />
-                </Routes>
+                </Switch>
               </ListItem>
             ))}
           </List>
