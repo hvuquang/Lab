@@ -1,0 +1,10 @@
+.swipeButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.swipeButton {
+    border: 2px solid rgb(128, 128, 128);
+    color: aqua;
+}

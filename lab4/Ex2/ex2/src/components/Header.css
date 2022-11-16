@@ -1,0 +1,9 @@
+.header__container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__logo {
+    width: 10%;
+    height: 10%
+}
