@@ -8,7 +8,8 @@ const index = (req, res, next) => {
 };
 
 const show = (req, res, next) => {
-  Video.find()
+  let videoID = "638320bbd31c8c7fc5584eb8"
+  Video.findById(videoID)
     .then((response) => {
       res.json({
         response,
