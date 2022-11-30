@@ -1,6 +1,7 @@
 const mongoose = require('mongoose')
+const Schema = mongoose.Schema;
 
-const shortVideoSchema = mongoose.Schema({
+const shortVideoSchema = new Schema({
     url: String,
     channel: String,
     description: String,
@@ -8,6 +9,8 @@ const shortVideoSchema = mongoose.Schema({
     likes: String,
     shares: String,
     messages: String
-})
+}, {timestamps: true})
 
-module.exports = mongoose.model('shortVideos', shortVideoSchema)
+const Video=mongoose.model('Video', shortVideoSchema)
+
+module.exports = Video;
