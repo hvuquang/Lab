@@ -1,6 +1,6 @@
-const postController = require('../controllers/postController')
+const postController = require('../controller/postController')
 const router = require('express').Router()
-const upload = require('../controllers/upload')
+const upload = require('../controller/upload')
 
 router.get('/get',postController.get)
 router.post('/add',upload.single('image'),postController.add)
